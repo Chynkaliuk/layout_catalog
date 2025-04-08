@@ -1,8 +1,14 @@
 @import 'vars';
-@import 'reset';
 @import 'header';
 @import 'card';
-@import 'stars';
+
+body, h2, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
 
 html {
   font-family: Roboto, sans-serif;

@@ -79,14 +79,28 @@
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
-    transition:
-      background-color 300ms ease,
-      color 300ms ease;
+    transition: background-color 300ms ease, color 300ms ease;
 
     &:hover {
       background-color: $white;
       color: $accent-color;
       border: 1px solid $accent-color;
     }
+  }
+}
+
+// Перенесено стилі зірок із stars.scss
+.stars {
+  display: flex;
+
+  &__star {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    background: url('../images/star-active.svg') center no-repeat;
+  }
+
+  &--rating-4 &__star:last-child {
+    background: url('../images/star.svg') center no-repeat;
   }
 }
